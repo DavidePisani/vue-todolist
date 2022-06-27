@@ -33,6 +33,8 @@ var app = new Vue(
             ]
         },
         methods: {
+
+             // aggiungo un nuovo oggetto all'arrey
             addTodo() {
                 if(this.newTodo.length > 0){
                     this.todos.push(
@@ -45,10 +47,9 @@ var app = new Vue(
                     this.newTodo = "";
                 };
             },
-
+            // rimuovo un oggetto dall'arrey
             removeTodo(index){
                 this.todos.splice(index,1)
-
             },
 
         }

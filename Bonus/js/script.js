@@ -37,6 +37,7 @@ var app = new Vue(
             ]
         },
         methods: {
+            // aggiungo un nuovo oggetto all'arrey
             addTodo() {
                 if(this.newTodo.length > 0){
                     this.todos.push(
@@ -49,12 +50,14 @@ var app = new Vue(
                     this.newTodo = "";
                 };
             },
-
+            // rimuovo un oggetto dall'arrey
             removeTodo(index){
                 this.todos.splice(index,1)
 
             },
-
+            
+            // funzione per switchare da true e folse
+            // per far si che si possa switchare tra scritta sbarrata o meno 
             todoDone(todo){
 
                 if (todo.done === false){
